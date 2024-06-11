@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/*.header::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../img/icons/header.svg');
+}*/
+
+.header .photo {
+    width: 100%;
+    max-width: 200px; /* Limita a largura máxima */
+    height: 200px;
+    border-radius: 50%;
+    background-image: url('/assets/img/Foto.png'); /* Caminho para a imagem da foto */
+    background-size: cover; /* Cobre todo o contêiner sem distorcer */
+    background-position: center; /* Centraliza a imagem */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.header .title {
+    font-family: 'Share Tech Mono';
+    text-align: center;
+    color: #55569E;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.information span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .5rem;
+    font-size: 1.125rem;
+    color: black;
+}
+
+.information i {
+    padding: 1px;
+    margin-right: 8px;
+}
+
+.information i:hover {
+    color: #55569E;
+}
+
+
+/*.information p::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+
+.information .job::before {
+    background-image: url('../img/icons/job.svg');
+}
+
+.information .location::before {
+    background-image: url('../img/icons/location.svg');
+}
+
+.information .email::before {
+    background-image: url('../img/icons/email.svg');
+}
+
+.information .phone::before {
+    background-image: url('../img/icons/phone.svg');*/
+
+
+@media only screen and (min-width: 768px) {
+    .header {
+        display: grid;
+        grid-template-areas:
+            "photo title"
+            "photo information"
+        ;
+    }
+
+    .header .photo {
+        grid-area: photo;
+        margin: 0 auto;
+    }
+
+    .header .title {
+        grid-area: title;
+        text-align: start;
+        max-width: 210px;
+    }
+
+    .header .information {
+        grid-area: information;
+    }
+}
