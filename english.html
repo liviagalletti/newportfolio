@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Lívia Medeiros</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/acordeon.css">
+    <link rel="stylesheet" href="assets/css/language.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="stylesheet" href="assets/css/experience.css">
+    <link rel="stylesheet" href="assets/css/skills.css">
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <img src="assets/img/perfilFoto.jpg" alt="Profile Photo" class="photo" id="profile.photo">
+
+            <h1 class="title">
+                <span id="profile.name"><br>Lívia Galletti</span>
+            </h1>
+
+            <div class="information">
+                <span> <i class="fa-solid fa-user"></i> Junior Developer </span>
+                <span> <i class="fa-solid fa-phone"></i> (61) 9 9803-4114</span>
+                <span> <i class="fa-solid fa-envelope"></i> <a href="liligalletti@gmail.com" target="_blank">liligalletti@gmail.com</a></span>
+                <span> <i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/livia-galletti/" target="_blank">in/livia-galletti/</a></span>
+                <span> <i class="fa-brands fa-github"></i> <a href="https://github.com/liviagalletti" target="_blank">github.com/liviagalletti</a></span>
+            </div>
+        </header>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Skills</h2>
+            </button>
+
+            <div class="content">
+                <div class="skills">
+                    <section class="tools">
+                        <h3>Tools:</h3>
+                        <ul id="profile.skills.hardSkills">
+                            <li> <img src="assets/icons/html-5.webp" alt="html"> </li>
+                            <li> <img src="assets/icons/css-3.webp" alt="css"> </li>
+                            <li> <img src="assets/icons/nodejs.webp" alt="node"> </li>
+                            <li> <img src="assets/icons/sql-server.webp" alt="sql"> </li>
+                            <li> <img src="assets/icons/python (1).webp" alt="python"> </li>                            
+                        </ul>
+                    </section>
+
+                    <section class="personal">
+                        <h3>Personal:</h3>
+                        <ul id="profile.skills.softSkills">
+                            <li>Teamwork</li>
+                            <li>Organization</li>
+                            <li>Flexibility</li>
+                            <li>Leadership</li>
+                            <li>Creativity</li>
+                            <li>Empathy</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Languages</h2>
+            </button>
+
+            <div class="content">
+                <ul class="languages" id="profile.languages">
+                    <li>Portuguese</li>
+                    <li>English (fluent) </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Education</h2>
+            </button>
+
+            <div class="content">
+                <ul class="portfolio" id="profile.portfolio">
+                    <li>
+                        <h3>Brigham Young University – Idaho/ Software Development</h3>
+                        <p style="line-height: 1.5;">Rexburg, Idaho, U.S.A  01/2023 – present  <br>
+                        Solid training in the application of new technologies and techniques, as well as in programming and design principles, with skill in efficiently converting software requirements into functional code.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3>Pathway Connect Certificate </h3>
+                        <p style="line-height: 1.5;">Rexburg, Idaho, U.S.A   07/2022 <br>
+                        Development of essential skills, including proficiency in oral and written communication in English, ability to make decisions and solve problems effectively, effective collaboration in team and online, analytical thinking and leadership skills, time management and effective communication.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Portfolio</h2>
+        
+            </button>
+
+            <div class="content">
+                <ul class="portfolio" id="profile.portfolio">
+
+                    <li>
+                        <a class='port' href="https://github.com/liviagalletti/newrepo?tab=readme-ov-file" target="_blank"><i class="fa-brands fa-github"></i> Node.js Website Project (Node.js/Express.js/PostgreSQL)</a> 
+                    </li>
+
+                    <li>
+                        <a class='port' href="https://github.com/liviagalletti/wdd230?tab=readme-ov-file" target="_blank"><i class="fa-brands fa-github"></i> Rental Website Project (Html/Css/Javascript)</a> 
+                    </li>
+
+                    <li>
+                        <a  class='port' href="https://github.com/liviagalletti/costa?tab=readme-ov-file" target="_blank"><i class="fa-brands fa-github"></i> MySQL Workbench (SQL)</a> 
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Professional Experience</h2>
+            </button>
+
+            <div class="content">
+                <ul class="experience" id="profile.professionalExperience">
+                    <li> 
+                        <h3>Cimed/ Sales Representative</h3>
+                        <p style="line-height: 1.5;">
+                            Brasilia, Brazil- 08/2020 - 10/2023 <br>
+                            Responsible for actively seeking new potential customers, identifying business opportunities and developing strategies to reach them. Building and maintaining strong relationships with existing customers, understanding their needs and ensuring continued satisfaction. Providing post-sale support to customers, answering questions, solving problems, and ensuring they are satisfied with the products or services purchased.
+                        </p>
+                    </li>
+
+                    <li> 
+                        <h3>Samsung Technical Assistance / Attendant</h3>
+                        <p style="line-height: 1.5;">
+                            Brasilia, Brazil- 06/2018 - 12/2020 <br>
+                            Developed an empathetic approach by actively listening to customers' needs and concerns, creating a welcoming and trustworthy environment. Additionally, provided clear and complete instructions to customers, ensuring they felt comfortable and confident using the technology.
+                        </p>
+                    </li>
+                    
+                    <li> 
+                        <h3>The Church of Jesus Christ of Latter-day Saints / Volunteer</h3>
+                        <p style="line-height: 1.5;">
+                            Sao Paulo, Brazil- 12/2016 - 05/2018 <br>
+                            Guided teams to achieve goals and fulfill commitments, collaborating with individuals from diverse nationalities. This experience enhanced my teamwork ability, patience, attention to detail, and fluency in English.
+                        </p>
+                    </li>   
+                    
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            
+        </footer>
+    </main>
+    <script src="https://kit.fontawesome.com/5d403e8369.js" crossorigin="anonymous"></script>
+    <script src="assets/js/acordeon.js"></script>
+    <script src="assets/js/api.js"></script>
+    
+</body>
+
+</html>
